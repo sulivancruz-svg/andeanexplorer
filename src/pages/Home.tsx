@@ -6,16 +6,10 @@ import { JourneyTimeline } from '@/components/sections/JourneyTimeline';
 import { AboardExperience } from '@/components/sections/AboardExperience';
 import { WebSeries } from '@/components/sections/WebSeries';
 
-const WHATSAPP_NUMBER = '5511999999999'; // placeholder
-
-
-
+const WHATSAPP_LINK = 'https://wa.link/h8qelr';
 
 const openWhatsApp = () => {
-  const message = encodeURIComponent(
-    'Olá! Tenho interesse no Belmond Andean Explorer e gostaria de receber uma proposta personalizada.'
-  );
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+  window.open(WHATSAPP_LINK, '_blank');
 };
 
 export default function Home() {
