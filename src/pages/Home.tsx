@@ -88,7 +88,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.4, duration: 0.8 }}>
               
-              <span className="text-xs tracking-[0.3em] uppercase text-cream/50 font-light">Descubra</span>
+              
               <motion.div
                 className="w-px h-8 bg-gold/50"
                 animate={{ scaleY: [1, 0.5, 1] }}
