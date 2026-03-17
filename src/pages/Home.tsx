@@ -112,37 +112,7 @@ export default function Home() {
         {/* ===== WEB SÉRIE ===== */}
         <WebSeries />
 
-        {/* ===== GALERIA ===== */}
-        <section className="py-28 md:py-40 border-t border-border">
-          <ScrollReveal>
-            <div className="text-center mb-16 px-6 space-y-4">
-              <span className="text-sm tracking-[0.3em] uppercase text-gold font-light">Galeria</span>
-              <h2 className="text-3xl md:text-5xl font-extralight tracking-wide text-foreground">
-                Paisagens que inspiram
-              </h2>
-            </div>
-          </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
-            {galleryImages.map((img, i) =>
-            <ScrollReveal key={img.src} delay={i * 0.1}>
-                <div className="relative aspect-[4/3] overflow-hidden group">
-                  <img
-                  src={img.src}
-                  alt={img.alt}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500 flex items-end p-6">
-                    <span className="text-cream/0 group-hover:text-cream/90 transition-colors duration-500 text-sm tracking-widest uppercase font-light">
-                      {img.alt}
-                    </span>
-                  </div>
-                </div>
-              </ScrollReveal>
-            )}
-          </div>
-        </section>
 
         {/* ===== CTA WHATSAPP ===== */}
         <section id="contato" className="py-28 md:py-40 px-6 lg:px-8 border-t border-border">
