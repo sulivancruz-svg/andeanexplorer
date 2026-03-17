@@ -34,20 +34,22 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-background" />
           </div>
 
+          {/* Logo top-left */}
+          <motion.img
+            src={seloLogo}
+            alt="Logo"
+            className="absolute top-8 left-8 h-10 md:h-14 opacity-70 z-10"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.7 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          />
+
           <div className="relative h-full flex flex-col items-center justify-center px-6">
             <motion.div
               className="text-center space-y-8 max-w-4xl"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: 'easeOut' }}>
-              <motion.img
-                src={seloLogo}
-                alt="Logo"
-                className="h-12 md:h-16 mx-auto opacity-70"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.7 }}
-                transition={{ duration: 1, delay: 0.2 }}
-              />
 
               <motion.h1
                 className="text-5xl md:text-7xl lg:text-8xl font-extralight tracking-[0.15em] text-cream leading-tight"
