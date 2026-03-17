@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import logoImg from '@/assets/logo-branco.png';
 import { Menu } from 'lucide-react';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
