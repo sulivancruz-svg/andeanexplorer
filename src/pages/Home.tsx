@@ -109,6 +109,9 @@ export default function Home() {
         {/* ===== GASTRONOMIA & A BORDO ===== */}
         <AboardExperience />
 
+        {/* ===== WEB SÉRIE ===== */}
+        <WebSeries />
+
         {/* ===== GALERIA ===== */}
         <section className="py-28 md:py-40 border-t border-border">
           <ScrollReveal>
