@@ -131,39 +131,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ===== EXPERIÊNCIA ===== */}
-        <section className="py-28 md:py-40 px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <ScrollReveal>
-              <div className="text-center mb-20 space-y-4">
-                <span className="text-sm tracking-[0.3em] uppercase text-gold font-light">A Experiência</span>
-                <h2 className="text-3xl md:text-5xl font-extralight tracking-wide text-foreground">
-                  Luxo sobre trilhos
-                </h2>
-                <p className="text-muted-foreground font-extralight max-w-2xl mx-auto text-lg">
-                  Inaugurado em 2017, o Belmond Andean Explorer combina design elegante
-                  com toques da cultura andina em uma rota entre Cusco, Puno e Arequipa.
-                </p>
-              </div>
-            </ScrollReveal>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-              {experiences.map((item, i) =>
-              <ScrollReveal key={item.title} delay={i * 0.15}>
-                  <div className="group p-8 border border-border hover:border-gold/30 transition-colors duration-500 bg-card/50">
-                    <item.icon className="size-8 text-gold mb-6 stroke-[1]" />
-                    <h3 className="text-xl font-light tracking-wide text-foreground mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="text-muted-foreground font-extralight leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                </ScrollReveal>
-              )}
-            </div>
-          </div>
-        </section>
+        {/* ===== JORNADA TIMELINE ===== */}
+        <JourneyTimeline />
 
         {/* ===== GALERIA ===== */}
         <section className="py-28 md:py-40 border-t border-border">
