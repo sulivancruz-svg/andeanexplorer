@@ -4,18 +4,9 @@ import { SEOHead } from '@/components/seo/SEOHead';
 import { ArrowRight, MessageCircle } from 'lucide-react';
 import { JourneyTimeline } from '@/components/sections/JourneyTimeline';
 import { AboardExperience } from '@/components/sections/AboardExperience';
-import { useState } from 'react';
-import { z } from 'zod';
-import { toast } from 'sonner';
-
-const leadSchema = z.object({
-  name: z.string().trim().min(2, 'Nome é obrigatório').max(100),
-  email: z.string().trim().email('Email inválido').max(255)
-});
+import { WebSeries } from '@/components/sections/WebSeries';
 
 const WHATSAPP_NUMBER = '5511999999999'; // placeholder
-
-
 
 const galleryImages = [
 { src: 'https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&q=80', alt: 'Andes peruanos' },
@@ -25,34 +16,14 @@ const galleryImages = [
 { src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80', alt: 'Gastronomia refinada' },
 { src: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80', alt: 'Lago Titicaca' }];
 
+const openWhatsApp = () => {
+  const message = encodeURIComponent(
+    'Olá! Tenho interesse no Belmond Andean Explorer e gostaria de receber uma proposta personalizada.'
+  );
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+};
 
 export default function Home() {
-  const [formData, setFormData] = useState({ name: '', email: '' });
-  const [errors, setErrors] = useState<Record<string, string>>({});
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const result = leadSchema.safeParse(formData);
-    if (!result.success) {
-      const fieldErrors: Record<string, string> = {};
-      result.error.errors.forEach((err) => {
-        if (err.path[0]) fieldErrors[err.path[0] as string] = err.message;
-      });
-      setErrors(fieldErrors);
-      return;
-    }
-    setErrors({});
-    toast.success('Obrigado pelo interesse! Entraremos em contato em breve.');
-    setFormData({ name: '', email: '' });
-  };
-
-  const openWhatsApp = () => {
-    const message = encodeURIComponent(
-      `Olá! Tenho interesse no Belmond Andean Explorer. Meu nome é ${formData.name || 'não informado'}.`
-    );
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
-  };
-
   return (
     <>
       <SEOHead
@@ -138,6 +109,9 @@ export default function Home() {
         {/* ===== GASTRONOMIA & A BORDO ===== */}
         <AboardExperience />
 
+        {/* ===== WEB SÉRIE ===== */}
+        <WebSeries />
+
         {/* ===== GALERIA ===== */}
         <section className="py-28 md:py-40 border-t border-border">
           <ScrollReveal>
@@ -170,74 +144,28 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ===== CONTATO / LEAD FORM ===== */}
+        {/* ===== CTA WHATSAPP ===== */}
         <section id="contato" className="py-28 md:py-40 px-6 lg:px-8 border-t border-border">
           <div className="max-w-2xl mx-auto text-center">
             <ScrollReveal>
-              <div className="space-y-4 mb-12">
+              <div className="space-y-6">
                 <span className="text-sm tracking-[0.3em] uppercase text-gold font-light">Exclusivo</span>
                 <h2 className="text-3xl md:text-5xl font-extralight tracking-wide text-foreground">
-                  Solicite sua proposta
+                  Viva essa experiência
                 </h2>
                 <p className="text-muted-foreground font-extralight text-lg max-w-lg mx-auto">
-                  Preencha seus dados e nossa equipe entrará em contato
-                  com uma proposta personalizada para a sua viagem.
+                  Fale diretamente com nossa equipe e receba uma
+                  proposta personalizada para a sua viagem a bordo do Andean Explorer.
                 </p>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.2}>
-              <form onSubmit={handleSubmit} className="space-y-6 text-left">
-                <div>
-                  <label htmlFor="name" className="block text-sm tracking-widest uppercase text-muted-foreground mb-2 font-light">
-                    Nome completo
-                  </label>
-                  <input
-                    id="name"
-                    type="text"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-transparent border border-border px-4 py-3 text-foreground font-light tracking-wide focus:outline-none focus:border-gold transition-colors placeholder:text-muted-foreground/50"
-                    placeholder="Seu nome"
-                    maxLength={100} />
-                  
-                  {errors.name && <p className="text-destructive text-sm mt-1">{errors.name}</p>}
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm tracking-widest uppercase text-muted-foreground mb-2 font-light">
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-transparent border border-border px-4 py-3 text-foreground font-light tracking-wide focus:outline-none focus:border-gold transition-colors placeholder:text-muted-foreground/50"
-                    placeholder="seu@email.com"
-                    maxLength={255} />
-                  
-                  {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <div className="pt-4">
                   <button
-                    type="submit"
-                    className="flex-1 px-8 py-4 bg-gold text-primary-foreground text-sm tracking-[0.2em] uppercase font-light hover:bg-gold-light transition-colors duration-300">
-                    
-                    Enviar
-                  </button>
-
-                  <button
-                    type="button"
                     onClick={openWhatsApp}
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 border border-gold/40 text-gold text-sm tracking-[0.2em] uppercase font-light hover:bg-gold/10 transition-colors duration-300">
-                    
-                    <MessageCircle className="size-4" />
-                    WhatsApp
+                    className="inline-flex items-center gap-3 px-10 py-5 bg-gold text-primary-foreground text-sm tracking-[0.2em] uppercase font-light hover:bg-gold-light transition-colors duration-300">
+                    <MessageCircle className="size-5" />
+                    Falar pelo WhatsApp
                   </button>
                 </div>
-              </form>
+              </div>
             </ScrollReveal>
           </div>
         </section>
