@@ -1,7 +1,7 @@
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import gastronomiaImg from '@/assets/gastronomia.jpeg';
-import vagaoImg from '@/assets/vagao.jpeg';
 import vagaoLoungeImg from '@/assets/vagao-lounge.jpg';
+import observatorioImg from '@/assets/observatorio.jpeg';
 import cabineImg from '@/assets/cabine.jpg';
 
 const features = [
@@ -11,12 +11,12 @@ const features = [
     description: 'O Llama e o Muña servem pratos com ingredientes frescos e sazonais da região, assinados por chefs renomados que trazem o melhor da gastronomia peruana.',
   },
   {
-    image: vagaoImg,
+    image: vagaoLoungeImg,
     title: 'Vagão-Lounge',
     description: 'O espaço ideal para encerrar o dia com um coquetel ou um excelente vinho peruano, ao som de música ambiente e em boa companhia.',
   },
   {
-    image: vagaoLoungeImg,
+    image: observatorioImg,
     title: 'Vagão-Observatório',
     description: 'Com terraço ao ar livre, convida a sentir a brisa andina enquanto se aprecia a paisagem ou o céu estrelado a mais de 3.800 metros de altitude.',
   },
