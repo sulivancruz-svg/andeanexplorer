@@ -3,6 +3,7 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { ArrowRight, MessageCircle } from 'lucide-react';
 import { JourneyTimeline } from '@/components/sections/JourneyTimeline';
+import { AboardExperience } from '@/components/sections/AboardExperience';
 import { useState } from 'react';
 import { z } from 'zod';
 import { toast } from 'sonner';
@@ -133,6 +134,9 @@ export default function Home() {
 
         {/* ===== JORNADA TIMELINE ===== */}
         <JourneyTimeline />
+
+        {/* ===== GASTRONOMIA & A BORDO ===== */}
+        <AboardExperience />
 
         {/* ===== GALERIA ===== */}
         <section className="py-28 md:py-40 border-t border-border">
