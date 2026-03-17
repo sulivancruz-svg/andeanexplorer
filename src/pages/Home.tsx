@@ -70,7 +70,9 @@ export default function Home() {
               </motion.p>
 
               <motion.a
-                href="#contato"
+                href="https://wa.link/h8qelr"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gold text-primary-foreground text-sm tracking-[0.2em] uppercase font-light hover:bg-gold-light transition-colors duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
