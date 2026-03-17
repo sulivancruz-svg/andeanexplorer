@@ -5,6 +5,7 @@ import { ArrowRight, MessageCircle } from 'lucide-react';
 import { JourneyTimeline } from '@/components/sections/JourneyTimeline';
 import { AboardExperience } from '@/components/sections/AboardExperience';
 import { WebSeries } from '@/components/sections/WebSeries';
+import seloLogo from '@/assets/selo-logo-branco.png';
 
 const WHATSAPP_LINK = 'https://wa.link/h8qelr';
 
@@ -39,7 +40,14 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: 'easeOut' }}>
-              
+              <motion.img
+                src={seloLogo}
+                alt="Logo"
+                className="h-12 md:h-16 mx-auto opacity-70"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.7 }}
+                transition={{ duration: 1, delay: 0.2 }}
+              />
 
               <motion.h1
                 className="text-5xl md:text-7xl lg:text-8xl font-extralight tracking-[0.15em] text-cream leading-tight"
