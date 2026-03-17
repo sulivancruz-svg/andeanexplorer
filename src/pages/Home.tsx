@@ -8,42 +8,42 @@ import { toast } from 'sonner';
 
 const leadSchema = z.object({
   name: z.string().trim().min(2, 'Nome é obrigatório').max(100),
-  email: z.string().trim().email('Email inválido').max(255),
+  email: z.string().trim().email('Email inválido').max(255)
 });
 
 const WHATSAPP_NUMBER = '5511999999999'; // placeholder
 
 const experiences = [
-  {
-    icon: Train,
-    title: 'Suítes de Luxo',
-    description: 'Cabines privativas com acabamento em madeira nobre, camas king-size e janelas panorâmicas com vista para os Andes.',
-  },
-  {
-    icon: UtensilsCrossed,
-    title: 'Gastronomia Peruana',
-    description: 'Menus elaborados por chefs renomados com ingredientes locais, harmonizados com vinhos sul-americanos selecionados.',
-  },
-  {
-    icon: Mountain,
-    title: 'Paisagens Andinas',
-    description: 'Atravesse o altiplano peruano entre Cusco, Puno e Arequipa, passando por paisagens que tiram o fôlego.',
-  },
-  {
-    icon: Star,
-    title: 'Experiências Exclusivas',
-    description: 'Paradas em sítios arqueológicos, mercados artesanais e observação de vida selvagem no Lago Titicaca.',
-  },
-];
+{
+  icon: Train,
+  title: 'Suítes de Luxo',
+  description: 'Cabines privativas com acabamento em madeira nobre, camas king-size e janelas panorâmicas com vista para os Andes.'
+},
+{
+  icon: UtensilsCrossed,
+  title: 'Gastronomia Peruana',
+  description: 'Menus elaborados por chefs renomados com ingredientes locais, harmonizados com vinhos sul-americanos selecionados.'
+},
+{
+  icon: Mountain,
+  title: 'Paisagens Andinas',
+  description: 'Atravesse o altiplano peruano entre Cusco, Puno e Arequipa, passando por paisagens que tiram o fôlego.'
+},
+{
+  icon: Star,
+  title: 'Experiências Exclusivas',
+  description: 'Paradas em sítios arqueológicos, mercados artesanais e observação de vida selvagem no Lago Titicaca.'
+}];
+
 
 const galleryImages = [
-  { src: 'https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&q=80', alt: 'Andes peruanos' },
-  { src: 'https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?w=800&q=80', alt: 'Trem de luxo' },
-  { src: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80', alt: 'Machu Picchu' },
-  { src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80', alt: 'Paisagem andina' },
-  { src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80', alt: 'Gastronomia refinada' },
-  { src: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80', alt: 'Lago Titicaca' },
-];
+{ src: 'https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&q=80', alt: 'Andes peruanos' },
+{ src: 'https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?w=800&q=80', alt: 'Trem de luxo' },
+{ src: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80', alt: 'Machu Picchu' },
+{ src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80', alt: 'Paisagem andina' },
+{ src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80', alt: 'Gastronomia refinada' },
+{ src: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80', alt: 'Lago Titicaca' }];
+
 
 export default function Home() {
   const [formData, setFormData] = useState({ name: '', email: '' });
@@ -74,10 +74,10 @@ export default function Home() {
 
   return (
     <>
-      <SEOHead 
+      <SEOHead
         title="Belmond Andean Explorer | Trem de Luxo no Peru"
-        description="Descubra a experiência incomparável do Belmond Andean Explorer. Viaje pelos Andes peruanos em suítes de luxo com gastronomia refinada."
-      />
+        description="Descubra a experiência incomparável do Belmond Andean Explorer. Viaje pelos Andes peruanos em suítes de luxo com gastronomia refinada." />
+      
 
       <div className="min-h-screen bg-background">
         {/* ===== HERO ===== */}
@@ -85,8 +85,8 @@ export default function Home() {
           <div className="absolute inset-0">
             <video
               autoPlay muted loop playsInline preload="metadata"
-              className="w-full h-full object-cover"
-            >
+              className="w-full h-full object-cover">
+              
               <source src="/videos/hero-bg.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-background" />
@@ -97,14 +97,14 @@ export default function Home() {
               className="text-center space-y-8 max-w-4xl"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, ease: 'easeOut' }}
-            >
+              transition={{ duration: 1.2, ease: 'easeOut' }}>
+              
               <motion.div
-                className="inline-block px-6 py-2 border border-gold/40 rounded-sm"
+                className="inline-block px-6 py-2 border border-gold/40 rounded-sm text-base"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.3, duration: 0.8 }}
-              >
+                transition={{ delay: 0.3, duration: 0.8 }}>
+                
                 <span className="text-sm tracking-[0.3em] uppercase text-gold-light font-light">
                   Uma jornada extraordinária
                 </span>
@@ -114,8 +114,8 @@ export default function Home() {
                 className="text-5xl md:text-7xl lg:text-8xl font-extralight tracking-[0.15em] text-cream leading-tight"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.4 }}
-              >
+                transition={{ duration: 1, delay: 0.4 }}>
+                
                 BELMOND
                 <br />
                 <span className="text-gold-gradient">ANDEAN EXPLORER</span>
@@ -125,8 +125,8 @@ export default function Home() {
                 className="text-lg md:text-xl font-extralight tracking-wide text-cream/80 max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.6 }}
-              >
+                transition={{ duration: 1, delay: 0.6 }}>
+                
                 O primeiro trem de luxo com pernoite da América do Sul.
                 <br className="hidden md:block" />
                 Atravesse os Andes peruanos em uma experiência inesquecível.
@@ -137,8 +137,8 @@ export default function Home() {
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gold text-primary-foreground text-sm tracking-[0.2em] uppercase font-light hover:bg-gold-light transition-colors duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.8 }}
-              >
+                transition={{ duration: 1, delay: 0.8 }}>
+                
                 Solicite sua proposta
                 <ArrowRight className="size-4" />
               </motion.a>
@@ -149,14 +149,14 @@ export default function Home() {
               className="absolute bottom-10 flex flex-col items-center gap-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 1.4, duration: 0.8 }}
-            >
+              transition={{ delay: 1.4, duration: 0.8 }}>
+              
               <span className="text-xs tracking-[0.3em] uppercase text-cream/50 font-light">Descubra</span>
               <motion.div
                 className="w-px h-8 bg-gold/50"
                 animate={{ scaleY: [1, 0.5, 1] }}
-                transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
-              />
+                transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }} />
+              
             </motion.div>
           </div>
         </section>
@@ -178,8 +178,8 @@ export default function Home() {
             </ScrollReveal>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-              {experiences.map((item, i) => (
-                <ScrollReveal key={item.title} delay={i * 0.15}>
+              {experiences.map((item, i) =>
+              <ScrollReveal key={item.title} delay={i * 0.15}>
                   <div className="group p-8 border border-border hover:border-gold/30 transition-colors duration-500 bg-card/50">
                     <item.icon className="size-8 text-gold mb-6 stroke-[1]" />
                     <h3 className="text-xl font-light tracking-wide text-foreground mb-3">
@@ -190,7 +190,7 @@ export default function Home() {
                     </p>
                   </div>
                 </ScrollReveal>
-              ))}
+              )}
             </div>
           </div>
         </section>
@@ -207,15 +207,15 @@ export default function Home() {
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
-            {galleryImages.map((img, i) => (
-              <ScrollReveal key={img.src} delay={i * 0.1}>
+            {galleryImages.map((img, i) =>
+            <ScrollReveal key={img.src} delay={i * 0.1}>
                 <div className="relative aspect-[4/3] overflow-hidden group">
                   <img
-                    src={img.src}
-                    alt={img.alt}
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500 flex items-end p-6">
                     <span className="text-cream/0 group-hover:text-cream/90 transition-colors duration-500 text-sm tracking-widest uppercase font-light">
                       {img.alt}
@@ -223,7 +223,7 @@ export default function Home() {
                   </div>
                 </div>
               </ScrollReveal>
-            ))}
+            )}
           </div>
         </section>
 
@@ -256,8 +256,8 @@ export default function Home() {
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full bg-transparent border border-border px-4 py-3 text-foreground font-light tracking-wide focus:outline-none focus:border-gold transition-colors placeholder:text-muted-foreground/50"
                     placeholder="Seu nome"
-                    maxLength={100}
-                  />
+                    maxLength={100} />
+                  
                   {errors.name && <p className="text-destructive text-sm mt-1">{errors.name}</p>}
                 </div>
 
@@ -272,24 +272,24 @@ export default function Home() {
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full bg-transparent border border-border px-4 py-3 text-foreground font-light tracking-wide focus:outline-none focus:border-gold transition-colors placeholder:text-muted-foreground/50"
                     placeholder="seu@email.com"
-                    maxLength={255}
-                  />
+                    maxLength={255} />
+                  
                   {errors.email && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <button
                     type="submit"
-                    className="flex-1 px-8 py-4 bg-gold text-primary-foreground text-sm tracking-[0.2em] uppercase font-light hover:bg-gold-light transition-colors duration-300"
-                  >
+                    className="flex-1 px-8 py-4 bg-gold text-primary-foreground text-sm tracking-[0.2em] uppercase font-light hover:bg-gold-light transition-colors duration-300">
+                    
                     Enviar
                   </button>
 
                   <button
                     type="button"
                     onClick={openWhatsApp}
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 border border-gold/40 text-gold text-sm tracking-[0.2em] uppercase font-light hover:bg-gold/10 transition-colors duration-300"
-                  >
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 border border-gold/40 text-gold text-sm tracking-[0.2em] uppercase font-light hover:bg-gold/10 transition-colors duration-300">
+                    
                     <MessageCircle className="size-4" />
                     WhatsApp
                   </button>
@@ -299,6 +299,6 @@ export default function Home() {
           </div>
         </section>
       </div>
-    </>
-  );
+    </>);
+
 }
