@@ -16,23 +16,23 @@ const WHATSAPP_NUMBER = '5511999999999'; // placeholder
 const experiences = [
 {
   icon: Train,
-  title: 'Suítes de Luxo',
-  description: 'Cabines privativas com acabamento em madeira nobre, camas king-size e janelas panorâmicas com vista para os Andes.'
+  title: '35 Cabines, 20 Vagões',
+  description: 'Suítes com banheiro privativo, mantas de lã de alpaca e o charme dos grandes trens clássicos — o primeiro trem de luxo com pernoite da América do Sul.'
 },
 {
   icon: UtensilsCrossed,
-  title: 'Gastronomia Peruana',
-  description: 'Menus elaborados por chefs renomados com ingredientes locais, harmonizados com vinhos sul-americanos selecionados.'
+  title: 'Alta Gastronomia Andina',
+  description: 'Dois vagões-restaurante com menus assinados por chefs renomados, ingredientes frescos e sazonais da região, e os melhores vinhos peruanos.'
 },
 {
   icon: Mountain,
-  title: 'Paisagens Andinas',
-  description: 'Atravesse o altiplano peruano entre Cusco, Puno e Arequipa, passando por paisagens que tiram o fôlego.'
+  title: 'Nascer do Sol nos Andes',
+  description: 'Assista o amanhecer dourado entre os lagos Saracocha e Lagunillas, a 4.000 metros de altitude, com café servido pela equipe ao pé da montanha.'
 },
 {
   icon: Star,
-  title: 'Experiências Exclusivas',
-  description: 'Paradas em sítios arqueológicos, mercados artesanais e observação de vida selvagem no Lago Titicaca.'
+  title: 'Cultura Viva',
+  description: 'Navegue pelo Lago Titicaca, visite as ilhas flutuantes de Uros, explore sítios arqueológicos incas e pinturas rupestres de 8.000 anos nas Cuevas de Sumbay.'
 }];
 
 
