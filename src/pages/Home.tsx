@@ -8,13 +8,8 @@ import { WebSeries } from '@/components/sections/WebSeries';
 
 const WHATSAPP_NUMBER = '5511999999999'; // placeholder
 
-const galleryImages = [
-{ src: 'https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&q=80', alt: 'Andes peruanos' },
-{ src: 'https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?w=800&q=80', alt: 'Trem de luxo' },
-{ src: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80', alt: 'Machu Picchu' },
-{ src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80', alt: 'Paisagem andina' },
-{ src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80', alt: 'Gastronomia refinada' },
-{ src: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80', alt: 'Lago Titicaca' }];
+
+
 
 const openWhatsApp = () => {
   const message = encodeURIComponent(
