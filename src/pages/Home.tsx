@@ -115,8 +115,9 @@ export default function Home() {
                   Viva essa experiência
                 </h2>
                 <p className="text-muted-foreground font-extralight text-lg max-w-lg mx-auto">
-                  Fale diretamente com nossa equipe e receba uma
-                  proposta personalizada para a sua viagem a bordo do Andean Explorer.
+                  Fale com nossos especialistas e comece a desenhar uma jornada no Andean Explorer do seu jeito, com cada detalhe pensado para você.
+                  <br /><br />
+                  Vai tranquilo. Vai Pro Mundo.
                 </p>
                 <div className="pt-4">
                   <button
