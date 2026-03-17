@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { SEOHead } from '@/components/seo/SEOHead';
-import { ArrowRight, Train, Mountain, UtensilsCrossed, Star, MessageCircle } from 'lucide-react';
+import { ArrowRight, MessageCircle } from 'lucide-react';
+import { JourneyTimeline } from '@/components/sections/JourneyTimeline';
 import { useState } from 'react';
 import { z } from 'zod';
 import { toast } from 'sonner';
@@ -13,27 +14,6 @@ const leadSchema = z.object({
 
 const WHATSAPP_NUMBER = '5511999999999'; // placeholder
 
-const experiences = [
-{
-  icon: Train,
-  title: '35 Cabines, 20 Vagões',
-  description: 'Suítes com banheiro privativo, mantas de lã de alpaca e o charme dos grandes trens clássicos — o primeiro trem de luxo com pernoite da América do Sul.'
-},
-{
-  icon: UtensilsCrossed,
-  title: 'Alta Gastronomia Andina',
-  description: 'Dois vagões-restaurante com menus assinados por chefs renomados, ingredientes frescos e sazonais da região, e os melhores vinhos peruanos.'
-},
-{
-  icon: Mountain,
-  title: 'Nascer do Sol nos Andes',
-  description: 'Assista o amanhecer dourado entre os lagos Saracocha e Lagunillas, a 4.000 metros de altitude, com café servido pela equipe ao pé da montanha.'
-},
-{
-  icon: Star,
-  title: 'Cultura Viva',
-  description: 'Navegue pelo Lago Titicaca, visite as ilhas flutuantes de Uros, explore sítios arqueológicos incas e pinturas rupestres de 8.000 anos nas Cuevas de Sumbay.'
-}];
 
 
 const galleryImages = [
@@ -151,39 +131,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ===== EXPERIÊNCIA ===== */}
-        <section className="py-28 md:py-40 px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <ScrollReveal>
-              <div className="text-center mb-20 space-y-4">
-                <span className="text-sm tracking-[0.3em] uppercase text-gold font-light">A Experiência</span>
-                <h2 className="text-3xl md:text-5xl font-extralight tracking-wide text-foreground">
-                  Luxo sobre trilhos
-                </h2>
-                <p className="text-muted-foreground font-extralight max-w-2xl mx-auto text-lg">
-                  Inaugurado em 2017, o Belmond Andean Explorer combina design elegante
-                  com toques da cultura andina em uma rota entre Cusco, Puno e Arequipa.
-                </p>
-              </div>
-            </ScrollReveal>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-              {experiences.map((item, i) =>
-              <ScrollReveal key={item.title} delay={i * 0.15}>
-                  <div className="group p-8 border border-border hover:border-gold/30 transition-colors duration-500 bg-card/50">
-                    <item.icon className="size-8 text-gold mb-6 stroke-[1]" />
-                    <h3 className="text-xl font-light tracking-wide text-foreground mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="text-muted-foreground font-extralight leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                </ScrollReveal>
-              )}
-            </div>
-          </div>
-        </section>
+        {/* ===== JORNADA TIMELINE ===== */}
+        <JourneyTimeline />
 
         {/* ===== GALERIA ===== */}
         <section className="py-28 md:py-40 border-t border-border">
