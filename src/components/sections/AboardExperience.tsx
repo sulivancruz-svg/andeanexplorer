@@ -11,7 +11,7 @@ const features = [
     description: 'O Llama e o Muña servem pratos com ingredientes frescos e sazonais da região, assinados por chefs renomados que trazem o melhor da gastronomia peruana.',
   },
   {
-    image: vagaoImg,
+    image: vagaoLoungeImg,
     title: 'Vagão-Lounge',
     description: 'O espaço ideal para encerrar o dia com um coquetel ou um excelente vinho peruano, ao som de música ambiente e em boa companhia.',
   },
