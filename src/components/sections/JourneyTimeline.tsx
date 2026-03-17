@@ -1,12 +1,15 @@
 import { motion } from 'framer-motion';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
+import raqchiImg from '@/assets/raqchi.jpg';
+import taquileImg from '@/assets/taquile.jpg';
+import nascerSolImg from '@/assets/nascer-sol-saracocha.jpeg';
 
 const days = [
   {
     day: 'Dia 1',
     title: 'De Cusco aos Templos Incas',
     location: 'Cusco → Raqchi',
-    image: 'https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&q=80',
+    image: raqchiImg,
     description:
       'A jornada começa no Belmond Monasterio, um seminário do século XVII transformado em hotel de luxo. O embarque acontece na charmosa estação Wanchaq, onde a equipe Belmond recebe cada viajante com atenção impecável. A primeira parada é o sítio arqueológico de Raqchi, com templos e construções incas que resistiram ao tempo.',
     highlights: ['Check-in no Belmond Monasterio', 'Embarque na estação Wanchaq', 'Visita ao sítio arqueológico de Raqchi'],
@@ -15,7 +18,7 @@ const days = [
     day: 'Dia 2',
     title: 'Lago Titicaca e Ilhas Flutuantes',
     location: 'Puno → Lago Titicaca',
-    image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80',
+    image: taquileImg,
     description:
       'O segundo dia leva ao Lago Titicaca, o lago navegável mais alto do mundo. Na ilha de Taquile, a comunidade local recebe os viajantes com música e danças típicas, seguidas de um almoço à beira do lago preparado pela equipe Belmond. Na sequência, as ilhas flutuantes de Uros, construídas com totora, revelam um modo de vida único.',
     highlights: ['Navegação pelo Lago Titicaca', 'Almoço exclusivo em Taquile', 'Ilhas flutuantes de Uros'],
@@ -24,7 +27,7 @@ const days = [
     day: 'Dia 3',
     title: 'Amanhecer Dourado a 4.000m',
     location: 'Saracocha → Cuevas de Sumbay',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+    image: nascerSolImg,
     description:
       'O momento mais marcante da viagem: o nascer do sol entre os lagos Saracocha e Lagunillas. Com café servido pela equipe, os viajantes sobem ao topo da montanha para ver a paisagem se transformar em ouro. A jornada segue até as Cuevas de Sumbay, com pinturas rupestres de 6.000 a 8.000 anos, acessadas por uma trilha exclusiva.',
     highlights: ['Nascer do sol entre dois lagos', 'Pinturas rupestres pré-históricas', 'Despedida com a equipe Belmond'],
