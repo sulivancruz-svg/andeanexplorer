@@ -114,9 +114,9 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <ScrollReveal>
               <div className="space-y-6">
-                <span className="text-sm tracking-[0.3em] uppercase text-gold font-light text-left">FALE COM NOSSOS ESPECIALISTAS E COMECE A DESENHAR UMA JORNADA NO ANDEAN EXPLORER DO SEU JEITO, COM CADA DETALHE PENSADO PARA VOCÊ.
+                <span className="text-sm tracking-[0.3em] uppercase text-gold font-light text-left">FALE COM NOSSOS ESPECIALISTAS E COMECE A DESENHAR UMA JORNADA NO ANDEAN EXPLORER DO SEU JEITO, COM CADA DETALHE PENSADO PARA VOCÊ. VAI TRANQUILO
 
-VAI TRANQUILO. VAI PRO MUNDO..</span>
+                </span>
                 <h2 className="text-3xl md:text-5xl font-extralight tracking-wide text-foreground">
                   Viva essa experiência
                 </h2>
