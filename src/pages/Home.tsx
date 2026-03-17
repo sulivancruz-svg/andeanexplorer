@@ -23,6 +23,7 @@ const openWhatsApp = () => {
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
 };
 
+export default function Home() {
   return (
     <>
       <SEOHead
