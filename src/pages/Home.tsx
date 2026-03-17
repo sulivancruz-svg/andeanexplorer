@@ -51,16 +51,6 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: 'easeOut' }}>
 
-              <motion.h1
-                className="text-5xl md:text-7xl lg:text-8xl font-extralight tracking-[0.15em] text-cream leading-tight"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.4 }}>
-                
-                BELMOND
-                <br />
-                <span className="text-gold-gradient">ANDEAN EXPLORER</span>
-              </motion.h1>
 
               <motion.p
                 className="text-lg md:text-xl font-extralight tracking-wide text-cream/80 max-w-2xl mx-auto"
