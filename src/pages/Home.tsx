@@ -5,12 +5,17 @@ import { ArrowRight, MessageCircle } from 'lucide-react';
 import { JourneyTimeline } from '@/components/sections/JourneyTimeline';
 import { AboardExperience } from '@/components/sections/AboardExperience';
 import { WebSeries } from '@/components/sections/WebSeries';
-import seloLogo from '@/assets/selo-logo-branco.png';
 
-const WHATSAPP_LINK = 'https://wa.link/h8qelr';
+const WHATSAPP_NUMBER = '5511999999999'; // placeholder
+
+
+
 
 const openWhatsApp = () => {
-  window.open(WHATSAPP_LINK, '_blank');
+  const message = encodeURIComponent(
+    'Olá! Tenho interesse no Belmond Andean Explorer e gostaria de receber uma proposta personalizada.'
+  );
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
 };
 
 export default function Home() {
@@ -34,23 +39,24 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-background" />
           </div>
 
-          {/* Logo top-left */}
-          <motion.img
-            src={seloLogo}
-            alt="Logo"
-            className="absolute top-8 left-8 h-10 md:h-14 opacity-70 z-10"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.7 }}
-            transition={{ duration: 1, delay: 0.2 }}
-          />
-
           <div className="relative h-full flex flex-col items-center justify-center px-6">
             <motion.div
               className="text-center space-y-8 max-w-4xl"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: 'easeOut' }}>
+              
 
+              <motion.h1
+                className="text-5xl md:text-7xl lg:text-8xl font-extralight tracking-[0.15em] text-cream leading-tight"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.4 }}>
+                
+                BELMOND
+                <br />
+                <span className="text-gold-gradient">ANDEAN EXPLORER</span>
+              </motion.h1>
 
               <motion.p
                 className="text-lg md:text-xl font-extralight tracking-wide text-cream/80 max-w-2xl mx-auto"
@@ -64,9 +70,7 @@ export default function Home() {
               </motion.p>
 
               <motion.a
-                href="https://wa.link/h8qelr"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contato"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gold text-primary-foreground text-sm tracking-[0.2em] uppercase font-light hover:bg-gold-light transition-colors duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
