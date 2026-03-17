@@ -9,7 +9,9 @@ export function Footer() {
             © {currentYear} Belmond Andean Explorer. Conteúdo promocional.
           </p>
           <a
-            href="#contato"
+            href="https://wa.link/h8qelr"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-xs tracking-[0.2em] uppercase text-gold font-light hover:text-gold-light transition-colors"
           >
             Solicitar Proposta
