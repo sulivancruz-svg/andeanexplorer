@@ -47,7 +47,7 @@ export function Header() {
           <Link
             to="/"
             className="flex items-center gap-3 hover:opacity-80 transition-opacity duration-300">
-            <img src={logoImg} alt="Logo" className="h-10 w-auto" />
+            <img src={logoImg} alt="Logo" className="h-20 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
