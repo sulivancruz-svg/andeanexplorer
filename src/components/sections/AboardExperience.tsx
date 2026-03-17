@@ -1,24 +1,27 @@
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
-import { UtensilsCrossed, Wine, Eye, Sofa } from 'lucide-react';
+import gastronomiaImg from '@/assets/gastronomia.jpeg';
+import vagaoImg from '@/assets/vagao.jpeg';
+import vagaoLoungeImg from '@/assets/vagao-lounge.jpg';
+import cabineImg from '@/assets/cabine.jpg';
 
 const features = [
   {
-    icon: UtensilsCrossed,
+    image: gastronomiaImg,
     title: 'Vagões-Restaurante',
     description: 'O Llama e o Muña servem pratos com ingredientes frescos e sazonais da região, assinados por chefs renomados que trazem o melhor da gastronomia peruana.',
   },
   {
-    icon: Wine,
+    image: vagaoImg,
     title: 'Vagão-Lounge',
     description: 'O espaço ideal para encerrar o dia com um coquetel ou um excelente vinho peruano, ao som de música ambiente e em boa companhia.',
   },
   {
-    icon: Eye,
+    image: vagaoLoungeImg,
     title: 'Vagão-Observatório',
     description: 'Com terraço ao ar livre, convida a sentir a brisa andina enquanto se aprecia a paisagem ou o céu estrelado a mais de 3.800 metros de altitude.',
   },
   {
-    icon: Sofa,
+    image: cabineImg,
     title: '35 Cabines de Luxo',
     description: 'Suítes com banheiro privativo, mantas de lã de alpaca e acabamento inspirado na cultura andina. Capacidade para até 70 viajantes em 20 vagões.',
   },
@@ -41,17 +44,27 @@ export function AboardExperience() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {features.map((item, i) => (
             <ScrollReveal key={item.title} delay={i * 0.12}>
-              <div className="group p-8 border border-border hover:border-gold/30 transition-colors duration-500 bg-card/50">
-                <item.icon className="size-8 text-gold mb-6 stroke-[1]" />
-                <h3 className="text-xl font-light tracking-wide text-foreground mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-muted-foreground font-extralight leading-relaxed">
-                  {item.description}
-                </p>
+              <div className="group overflow-hidden border border-border hover:border-gold/30 transition-colors duration-500 bg-card/50">
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                </div>
+                <div className="p-6 md:p-8">
+                  <h3 className="text-xl font-light tracking-wide text-foreground mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-muted-foreground font-extralight leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             </ScrollReveal>
           ))}
