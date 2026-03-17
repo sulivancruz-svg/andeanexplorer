@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import logoImg from '@/assets/logo-branco.png';
 import { Menu } from 'lucide-react';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -45,9 +46,8 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <Link
             to="/"
-            className="text-sm tracking-[0.3em] uppercase font-light text-cream hover:text-gold transition-colors duration-300">
-            
-            Belmond Andean Explorer
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity duration-300">
+            <img src={logoImg} alt="Logo" className="h-8 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
