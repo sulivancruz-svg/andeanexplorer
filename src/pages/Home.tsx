@@ -6,14 +6,7 @@ import { JourneyTimeline } from '@/components/sections/JourneyTimeline';
 import { AboardExperience } from '@/components/sections/AboardExperience';
 import { WebSeries } from '@/components/sections/WebSeries';
 
-const leadSchema = z.object({
-  name: z.string().trim().min(2, 'Nome é obrigatório').max(100),
-  email: z.string().trim().email('Email inválido').max(255)
-});
-
 const WHATSAPP_NUMBER = '5511999999999'; // placeholder
-
-
 
 const galleryImages = [
 { src: 'https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&q=80', alt: 'Andes peruanos' },
@@ -23,33 +16,12 @@ const galleryImages = [
 { src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80', alt: 'Gastronomia refinada' },
 { src: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80', alt: 'Lago Titicaca' }];
 
-
-export default function Home() {
-  const [formData, setFormData] = useState({ name: '', email: '' });
-  const [errors, setErrors] = useState<Record<string, string>>({});
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const result = leadSchema.safeParse(formData);
-    if (!result.success) {
-      const fieldErrors: Record<string, string> = {};
-      result.error.errors.forEach((err) => {
-        if (err.path[0]) fieldErrors[err.path[0] as string] = err.message;
-      });
-      setErrors(fieldErrors);
-      return;
-    }
-    setErrors({});
-    toast.success('Obrigado pelo interesse! Entraremos em contato em breve.');
-    setFormData({ name: '', email: '' });
-  };
-
-  const openWhatsApp = () => {
-    const message = encodeURIComponent(
-      `Olá! Tenho interesse no Belmond Andean Explorer. Meu nome é ${formData.name || 'não informado'}.`
-    );
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
-  };
+const openWhatsApp = () => {
+  const message = encodeURIComponent(
+    'Olá! Tenho interesse no Belmond Andean Explorer e gostaria de receber uma proposta personalizada.'
+  );
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+};
 
   return (
     <>
