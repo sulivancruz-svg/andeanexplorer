@@ -16,7 +16,7 @@ const features = [
     description: 'O espaço ideal para encerrar o dia com um coquetel ou um excelente vinho peruano, ao som de música ambiente e em boa companhia.',
   },
   {
-    image: vagaoLoungeImg,
+    image: observatorioImg,
     title: 'Vagão-Observatório',
     description: 'Com terraço ao ar livre, convida a sentir a brisa andina enquanto se aprecia a paisagem ou o céu estrelado a mais de 3.800 metros de altitude.',
   },
