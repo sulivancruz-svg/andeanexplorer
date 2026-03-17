@@ -14,27 +14,6 @@ const leadSchema = z.object({
 
 const WHATSAPP_NUMBER = '5511999999999'; // placeholder
 
-const experiences = [
-{
-  icon: Train,
-  title: '35 Cabines, 20 Vagões',
-  description: 'Suítes com banheiro privativo, mantas de lã de alpaca e o charme dos grandes trens clássicos — o primeiro trem de luxo com pernoite da América do Sul.'
-},
-{
-  icon: UtensilsCrossed,
-  title: 'Alta Gastronomia Andina',
-  description: 'Dois vagões-restaurante com menus assinados por chefs renomados, ingredientes frescos e sazonais da região, e os melhores vinhos peruanos.'
-},
-{
-  icon: Mountain,
-  title: 'Nascer do Sol nos Andes',
-  description: 'Assista o amanhecer dourado entre os lagos Saracocha e Lagunillas, a 4.000 metros de altitude, com café servido pela equipe ao pé da montanha.'
-},
-{
-  icon: Star,
-  title: 'Cultura Viva',
-  description: 'Navegue pelo Lago Titicaca, visite as ilhas flutuantes de Uros, explore sítios arqueológicos incas e pinturas rupestres de 8.000 anos nas Cuevas de Sumbay.'
-}];
 
 
 const galleryImages = [
