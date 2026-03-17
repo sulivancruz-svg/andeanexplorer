@@ -6,10 +6,16 @@ import { JourneyTimeline } from '@/components/sections/JourneyTimeline';
 import { AboardExperience } from '@/components/sections/AboardExperience';
 import { WebSeries } from '@/components/sections/WebSeries';
 
-const WHATSAPP_LINK = 'https://wa.link/h8qelr';
+const WHATSAPP_NUMBER = '5511999999999'; // placeholder
+
+
+
 
 const openWhatsApp = () => {
-  window.open(WHATSAPP_LINK, '_blank');
+  const message = encodeURIComponent(
+    'Olá! Tenho interesse no Belmond Andean Explorer e gostaria de receber uma proposta personalizada.'
+  );
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
 };
 
 export default function Home() {
@@ -64,9 +70,7 @@ export default function Home() {
               </motion.p>
 
               <motion.a
-                href="https://wa.link/h8qelr"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contato"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gold text-primary-foreground text-sm tracking-[0.2em] uppercase font-light hover:bg-gold-light transition-colors duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -110,19 +114,18 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <ScrollReveal>
               <div className="space-y-6">
-                <span className="text-sm tracking-[0.3em] uppercase text-gold font-light">Exclusivo</span>
+                <span className="text-sm tracking-[0.3em] uppercase text-gold font-light text-left">FALE COM NOSSOS ESPECIALISTAS E COMECE A DESENHAR UMA JORNADA NO ANDEAN EXPLORER DO SEU JEITO, COM CADA DETALHE PENSADO PARA VOCÊ.
+
+VAI TRANQUILO. VAI PRO MUNDO..</span>
                 <h2 className="text-3xl md:text-5xl font-extralight tracking-wide text-foreground">
                   Viva essa experiência
                 </h2>
                 <p className="text-muted-foreground font-extralight text-lg max-w-lg mx-auto">
-                  Fale com nossos especialistas e comece a desenhar uma jornada no Andean Explorer do seu jeito, com cada detalhe pensado para você.
-                  <br /><br />
-                  Vai tranquilo. Vai Pro Mundo.
+                  Fale diretamente com nossa equipe e receba uma
+                  proposta personalizada para a sua viagem a bordo do Andean Explorer.
                 </p>
                 <div className="pt-4">
-                  <button
-                    onClick={openWhatsApp}
-                    className="inline-flex items-center gap-3 px-10 py-5 bg-gold text-primary-foreground text-sm tracking-[0.2em] uppercase font-light hover:bg-gold-light transition-colors duration-300">
+                  <button onClick={openWhatsApp} className="inline-flex items-center gap-3 px-10 py-5 bg-gold text-primary-foreground text-sm tracking-[0.2em] uppercase font-light hover:bg-gold-light transition-colors duration-300">
                     <MessageCircle className="size-5" />
                     Falar pelo WhatsApp
                   </button>
