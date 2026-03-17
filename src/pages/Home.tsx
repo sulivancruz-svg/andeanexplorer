@@ -135,6 +135,9 @@ export default function Home() {
         {/* ===== JORNADA TIMELINE ===== */}
         <JourneyTimeline />
 
+        {/* ===== GASTRONOMIA & A BORDO ===== */}
+        <AboardExperience />
+
         {/* ===== GALERIA ===== */}
         <section className="py-28 md:py-40 border-t border-border">
           <ScrollReveal>
