@@ -161,8 +161,8 @@ export default function Home() {
                   Luxo sobre trilhos
                 </h2>
                 <p className="text-muted-foreground font-extralight max-w-2xl mx-auto text-lg">
-                  Cada detalhe foi pensado para proporcionar uma viagem sensorial
-                  pelos cenários mais dramáticos do Peru.
+                  Inaugurado em 2017, o Belmond Andean Explorer combina design elegante
+                  com toques da cultura andina em uma rota entre Cusco, Puno e Arequipa.
                 </p>
               </div>
             </ScrollReveal>
