@@ -3,6 +3,7 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { ArrowRight, MessageCircle } from 'lucide-react';
 import { JourneyTimeline } from '@/components/sections/JourneyTimeline';
+import { AboardExperience } from '@/components/sections/AboardExperience';
 import { useState } from 'react';
 import { z } from 'zod';
 import { toast } from 'sonner';
