@@ -114,15 +114,13 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <ScrollReveal>
               <div className="space-y-6">
-                <span className="text-sm tracking-[0.3em] uppercase text-gold font-light text-left">FALE COM NOSSOS ESPECIALISTAS E COMECE A DESENHAR UMA JORNADA NO ANDEAN EXPLORER DO SEU JEITO, COM CADA DETALHE PENSADO PARA VOCÊ. VAI TRANQUILO
-
-                </span>
                 <h2 className="text-3xl md:text-5xl font-extralight tracking-wide text-foreground">
                   Viva essa experiência
                 </h2>
                 <p className="text-muted-foreground font-extralight text-lg max-w-lg mx-auto">
-                  Fale diretamente com nossa equipe e receba uma
-                  proposta personalizada para a sua viagem a bordo do Andean Explorer.
+                  Fale com nossos especialistas e comece a desenhar uma jornada no Andean Explorer do seu jeito, com cada detalhe pensado para você.
+                  <br /><br />
+                  Vai tranquilo. Vai Pro Mundo.
                 </p>
                 <div className="pt-4">
                   <button onClick={openWhatsApp} className="inline-flex items-center gap-3 px-10 py-5 bg-gold text-primary-foreground text-sm tracking-[0.2em] uppercase font-light hover:bg-gold-light transition-colors duration-300">
