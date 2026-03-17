@@ -53,7 +53,7 @@ export default function Home() {
               transition={{ duration: 1, ease: "easeOut" }}>
               
             <motion.h1
-                className="text-6xl md:text-8xl font-extralight tracking-widest text-white lg:text-5xl"
+                className="text-6xl md:text-8xl font-extralight tracking-widest text-white lg:text-5xl whitespace-pre-line"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.2 }}>
@@ -62,7 +62,7 @@ export default function Home() {
             </motion.h1>
             
             <motion.p
-                className="text-xl md:text-2xl font-light tracking-wide text-white/90"
+                className="text-xl md:text-2xl font-light tracking-wide text-white/90 whitespace-pre-line"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.4 }}>
@@ -71,7 +71,7 @@ export default function Home() {
             </motion.p>
 
             <motion.p
-                className="text-base md:text-lg font-light leading-relaxed text-white/80 max-w-2xl mx-auto"
+                className="text-base md:text-lg font-light leading-relaxed text-white/80 max-w-2xl mx-auto whitespace-pre-line"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.6 }}>
