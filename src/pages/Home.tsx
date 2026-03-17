@@ -117,9 +117,9 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.6 }}>
                 
-                O primeiro trem de luxo com pernoite da América do Sul.
+                Uma jornada cultural e gastronômica pelos Andes peruanos.
                 <br className="hidden md:block" />
-                Atravesse os Andes peruanos em uma experiência inesquecível.
+                De Cusco ao Lago Titicaca, uma experiência que transforma.
               </motion.p>
 
               <motion.a
