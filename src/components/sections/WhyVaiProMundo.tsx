@@ -58,7 +58,7 @@ export function WhyVaiProMundo() {
             <div className="w-full md:w-1/2 space-y-6">
               <div className="flex gap-5">
                 <Compass className="size-6 text-gold shrink-0 mt-1" strokeWidth={1.2} />
-                <p className="text-muted-foreground font-extralight leading-relaxed text-sm">
+                <p className="text-muted-foreground font-extralight leading-relaxed text-base">
                   Porque uma viagem como essa pede mais do que reserva. Pede curadoria, cuidado com os
                   detalhes e alguém que entenda como transformar um roteiro já extraordinário em uma
                   experiência bem planejada do começo ao fim.
@@ -66,7 +66,7 @@ export function WhyVaiProMundo() {
               </div>
               <div className="flex gap-5">
                 <Star className="size-6 text-gold shrink-0 mt-1" strokeWidth={1.2} />
-                <p className="text-muted-foreground font-extralight leading-relaxed text-sm">Com 20 anos de trajetória, mais de 550 avaliações 5 estrelas no Google e o reconhecimento de estar entre as 10 melhores agências de lazer do Brasil, a Vai Pro Mundo une experiência, repertório e atendimento próximo para cuidar da sua jornada com o nível de atenção que ela merece.
+                <p className="text-muted-foreground font-extralight leading-relaxed text-base">Com 20 anos de trajetória, mais de 550 avaliações 5 estrelas no Google e o reconhecimento de estar entre as 10 melhores agências de lazer do Brasil, a Vai Pro Mundo une experiência, repertório e atendimento próximo para cuidar da sua jornada com o nível de atenção que ela merece.
 
 
 
