@@ -13,6 +13,7 @@ const navLinks = [
 { name: 'A Jornada', path: '/#jornada' },
 { name: 'A Bordo', path: '/#abordo' },
 { name: 'Série', path: '/#serie' },
+{ name: 'Sobre Nós', path: '/#sobrenos' },
 { name: 'Contato', path: '/#contato' }];
 
 
