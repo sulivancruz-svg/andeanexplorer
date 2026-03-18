@@ -104,6 +104,9 @@ export default function Home() {
 
 
 
+        {/* ===== FAQ ===== */}
+        <FAQ />
+
         {/* ===== CTA WHATSAPP ===== */}
         <section id="contato" className="py-28 md:py-40 px-6 lg:px-8 border-t border-border">
           <div className="max-w-2xl mx-auto text-center">
