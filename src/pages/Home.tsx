@@ -58,8 +58,8 @@ export default function Home() {
                 className="text-lg md:text-xl font-extralight tracking-wide text-cream/80 max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.6 }}>
-                ma jornada pelo Peru a bordo do único trem de alto padrão da América Latina, conectando Cusco a Arequipa com conforto e experiências pensadas em cada detalheDe Cusco ao Lago Titicaca, uma experiência que transforma.
+                transition={{ duration: 1, delay: 0.6 }}>Uma jornada pelo Peru a bordo do único trem de alto padrão da América Latina, conectando Cusco a Arequipa com conforto e experiências pensadas em cada detalhe.
+
               </motion.p>
 
               <motion.a
