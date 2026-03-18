@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
+import { Check, Users } from 'lucide-react';
 import raqchiImg from '@/assets/raqchi.jpg';
 import taquileImg from '@/assets/taquile.jpg';
 import nascerSolImg from '@/assets/nascer-sol-saracocha.jpeg';
@@ -7,31 +8,51 @@ import nascerSolImg from '@/assets/nascer-sol-saracocha.jpeg';
 const days = [
   {
     day: 'Dia 1',
-    title: 'De Cusco aos Templos Incas',
-    location: 'Cusco → Raqchi',
+    title: 'Cusco',
+    location: 'Cusco → La Raya → Lago Titicaca',
     image: raqchiImg,
-    description:
-      'A jornada começa no Belmond Monasterio, um seminário do século XVII transformado em hotel de luxo. O embarque acontece na charmosa estação Wanchaq, onde a equipe Belmond recebe cada viajante com atenção impecável. A primeira parada é o sítio arqueológico de Raqchi, com templos e construções incas que resistiram ao tempo.',
-    highlights: ['Check-in no Belmond Monasterio', 'Embarque na estação Wanchaq', 'Visita ao sítio arqueológico de Raqchi'],
+    paragraphs: [
+      'A jornada começa em Cusco, antiga capital do Império Inca. O embarque já dá o tom do que vem pela frente: calma, cuidado e uma transição suave entre destino e experiência.',
+      'Você se acomoda na sua cabine e, aos poucos, o trem segue em direção ao sudeste, rumo a Puno.',
+      'O primeiro almoço acontece a bordo, em vagões-restaurante elegantes, com pratos que valorizam ingredientes andinos em uma leitura contemporânea.',
+      'Durante o percurso, uma parada especial na estação de Tinta leva você até Raqch\'i, um sítio arqueológico que revela uma parte única da história Inca.',
+      'No caminho, a travessia pela cordilheira de La Raya entrega uma das paisagens mais marcantes da jornada.',
+      'À noite, o jantar é servido a bordo e o clima naturalmente convida a desacelerar. O trem segue até as margens do Lago Titicaca, onde permanece durante a noite.',
+    ],
   },
   {
     day: 'Dia 2',
-    title: 'Lago Titicaca e Ilhas Flutuantes',
-    location: 'Puno → Lago Titicaca',
+    title: 'Puno e Lago Titicaca',
+    location: 'Lago Titicaca → Uros → Taquile → Sacacoha',
     image: taquileImg,
-    description:
-      'O segundo dia leva ao Lago Titicaca, o lago navegável mais alto do mundo. Na ilha de Taquile, a comunidade local recebe os viajantes com música e danças típicas, seguidas de um almoço à beira do lago preparado pela equipe Belmond. Na sequência, as ilhas flutuantes de Uros, construídas com totora, revelam um modo de vida único.',
-    highlights: ['Navegação pelo Lago Titicaca', 'Almoço exclusivo em Taquile', 'Ilhas flutuantes de Uros'],
+    paragraphs: [
+      'O dia começa com um café da manhã tranquilo, com vista para uma das regiões mais emblemáticas do Peru.',
+      'A experiência continua com um passeio de barco até as ilhas dos Uros. Um lugar que impressiona não só pela paisagem, mas pela forma como a vida acontece ali, em ilhas construídas com juncos, renovadas constantemente.',
+      'Depois, a visita segue até a Ilha de Taquile, onde o almoço é servido e o tempo parece passar em outro ritmo.',
+      'Há ainda uma parada na Praia de Collata, antes do retorno ao trem.',
+      'No fim da tarde, um chá é servido a bordo, marcando essa pausa entre experiências.',
+      'À noite, o trem segue em direção a Sacacoha.',
+    ],
   },
   {
     day: 'Dia 3',
-    title: 'Amanhecer Dourado a 4.000m',
-    location: 'Saracocha → Cuevas de Sumbay',
+    title: 'Arequipa',
+    location: 'Lagunillas → Sumbay → Arequipa',
     image: nascerSolImg,
-    description:
-      'O momento mais marcante da viagem: o nascer do sol entre os lagos Saracocha e Lagunillas. Com café servido pela equipe, os viajantes sobem ao topo da montanha para ver a paisagem se transformar em ouro. A jornada segue até as Cuevas de Sumbay, com pinturas rupestres de 6.000 a 8.000 anos, acessadas por uma trilha exclusiva.',
-    highlights: ['Nascer do sol entre dois lagos', 'Pinturas rupestres pré-históricas', 'Despedida com a equipe Belmond'],
+    paragraphs: [
+      'O amanhecer traz uma das cenas mais bonitas da viagem: o nascer do sol sobre o Lago Lagunillas.',
+      'Depois do café da manhã, a jornada continua até as cavernas de Sumbay, onde pinturas rupestres com mais de 8 mil anos revelam histórias silenciosas do passado.',
+      'O almoço acontece a bordo, enquanto o trem segue para Arequipa.',
+      'A chegada marca o fim da viagem, com a opção de um tour panorâmico pela cidade ou transfer direto ao aeroporto.',
+    ],
   },
+];
+
+const included = [
+  'Acomodação a bordo do trem Belmond',
+  'Todas as refeições e bebidas durante a jornada',
+  'Experiências e entretenimento a bordo',
+  'Excursões guiadas ao longo do percurso',
 ];
 
 export function JourneyTimeline() {
@@ -86,27 +107,62 @@ export function JourneyTimeline() {
                       </div>
                     </div>
 
-                    <div className={`w-full md:w-1/2 space-y-5 ${isEven ? 'md:text-left' : 'md:text-right'}`}>
+                    <div className={`w-full md:w-1/2 space-y-4 ${isEven ? 'md:text-left' : 'md:text-right'}`}>
                       <h3 className="text-2xl md:text-3xl font-extralight tracking-wide text-foreground">
                         {item.title}
                       </h3>
-                      <p className="text-muted-foreground font-extralight leading-relaxed">
-                        {item.description}
-                      </p>
-                      <ul className={`space-y-2 ${isEven ? '' : 'md:ml-auto'}`}>
-                        {item.highlights.map((h) => (
-                          <li key={h} className={`flex items-center gap-3 text-sm text-gold/80 font-light tracking-wide ${!isEven ? 'md:flex-row-reverse' : ''}`}>
-                            <span className="w-1 h-1 rounded-full bg-gold shrink-0" />
-                            {h}
-                          </li>
+                      <div className="space-y-3">
+                        {item.paragraphs.map((p, idx) => (
+                          <p key={idx} className="text-muted-foreground font-extralight leading-relaxed text-sm">
+                            {p}
+                          </p>
                         ))}
-                      </ul>
+                      </div>
                     </div>
                   </div>
                 </ScrollReveal>
               );
             })}
           </div>
+        </div>
+
+        {/* ===== O QUE ESTÁ INCLUÍDO ===== */}
+        <div className="mt-32">
+          <ScrollReveal>
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-12 space-y-4">
+                <span className="text-sm tracking-[0.3em] uppercase text-gold font-light">Detalhes</span>
+                <h2 className="text-3xl md:text-4xl font-extralight tracking-wide text-foreground">
+                  O que está incluído
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {included.map((item) => (
+                  <div key={item} className="flex items-start gap-3 p-4 border border-border rounded-sm">
+                    <Check className="size-5 text-gold shrink-0 mt-0.5" />
+                    <span className="text-foreground font-extralight tracking-wide text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* ===== INVESTIMENTO ===== */}
+              <div className="mt-16 text-center border border-gold/20 p-10 md:p-14">
+                <div className="flex items-center justify-center gap-2 mb-4">
+                  <Users className="size-5 text-gold" />
+                  <span className="text-sm tracking-[0.3em] uppercase text-gold font-light">Para duas pessoas</span>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-4xl md:text-5xl font-extralight tracking-wide text-foreground">
+                    Consulte valores
+                  </p>
+                  <p className="text-muted-foreground font-extralight text-sm max-w-md mx-auto">
+                    Os valores variam conforme a data de embarque e tipo de cabine escolhida. Entre em contato para uma proposta personalizada.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
