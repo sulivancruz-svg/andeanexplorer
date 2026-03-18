@@ -6,54 +6,54 @@ import taquileImg from '@/assets/taquile.jpg';
 import nascerSolImg from '@/assets/nascer-sol-saracocha.jpeg';
 
 const days = [
-  {
-    day: 'Dia 1',
-    title: 'Cusco',
-    location: 'Cusco → La Raya → Lago Titicaca',
-    image: raqchiImg,
-    paragraphs: [
-      'A jornada começa em Cusco, antiga capital do Império Inca. O embarque já dá o tom do que vem pela frente: calma, cuidado e uma transição suave entre destino e experiência.',
-      'Você se acomoda na sua cabine e, aos poucos, o trem segue em direção ao sudeste, rumo a Puno.',
-      'O primeiro almoço acontece a bordo, em vagões-restaurante elegantes, com pratos que valorizam ingredientes andinos em uma leitura contemporânea.',
-      'Durante o percurso, uma parada especial na estação de Tinta leva você até Raqch\'i, um sítio arqueológico que revela uma parte única da história Inca.',
-      'No caminho, a travessia pela cordilheira de La Raya entrega uma das paisagens mais marcantes da jornada.',
-      'À noite, o jantar é servido a bordo e o clima naturalmente convida a desacelerar. O trem segue até as margens do Lago Titicaca, onde permanece durante a noite.',
-    ],
-  },
-  {
-    day: 'Dia 2',
-    title: 'Puno e Lago Titicaca',
-    location: 'Lago Titicaca → Uros → Taquile → Sacacoha',
-    image: taquileImg,
-    paragraphs: [
-      'O dia começa com um café da manhã tranquilo, com vista para uma das regiões mais emblemáticas do Peru.',
-      'A experiência continua com um passeio de barco até as ilhas dos Uros. Um lugar que impressiona não só pela paisagem, mas pela forma como a vida acontece ali, em ilhas construídas com juncos, renovadas constantemente.',
-      'Depois, a visita segue até a Ilha de Taquile, onde o almoço é servido e o tempo parece passar em outro ritmo.',
-      'Há ainda uma parada na Praia de Collata, antes do retorno ao trem.',
-      'No fim da tarde, um chá é servido a bordo, marcando essa pausa entre experiências.',
-      'À noite, o trem segue em direção a Sacacoha.',
-    ],
-  },
-  {
-    day: 'Dia 3',
-    title: 'Arequipa',
-    location: 'Lagunillas → Sumbay → Arequipa',
-    image: nascerSolImg,
-    paragraphs: [
-      'O amanhecer traz uma das cenas mais bonitas da viagem: o nascer do sol sobre o Lago Lagunillas.',
-      'Depois do café da manhã, a jornada continua até as cavernas de Sumbay, onde pinturas rupestres com mais de 8 mil anos revelam histórias silenciosas do passado.',
-      'O almoço acontece a bordo, enquanto o trem segue para Arequipa.',
-      'A chegada marca o fim da viagem, com a opção de um tour panorâmico pela cidade ou transfer direto ao aeroporto.',
-    ],
-  },
-];
+{
+  day: 'Dia 1',
+  title: 'Cusco',
+  location: 'Cusco → La Raya → Lago Titicaca',
+  image: raqchiImg,
+  paragraphs: [
+  'A jornada começa em Cusco, antiga capital do Império Inca. O embarque já dá o tom do que vem pela frente: calma, cuidado e uma transição suave entre destino e experiência.',
+  'Você se acomoda na sua cabine e, aos poucos, o trem segue em direção ao sudeste, rumo a Puno.',
+  'O primeiro almoço acontece a bordo, em vagões-restaurante elegantes, com pratos que valorizam ingredientes andinos em uma leitura contemporânea.',
+  'Durante o percurso, uma parada especial na estação de Tinta leva você até Raqch\'i, um sítio arqueológico que revela uma parte única da história Inca.',
+  'No caminho, a travessia pela cordilheira de La Raya entrega uma das paisagens mais marcantes da jornada.',
+  'À noite, o jantar é servido a bordo e o clima naturalmente convida a desacelerar. O trem segue até as margens do Lago Titicaca, onde permanece durante a noite.']
+
+},
+{
+  day: 'Dia 2',
+  title: 'Puno e Lago Titicaca',
+  location: 'Lago Titicaca → Uros → Taquile → Sacacoha',
+  image: taquileImg,
+  paragraphs: [
+  'O dia começa com um café da manhã tranquilo, com vista para uma das regiões mais emblemáticas do Peru.',
+  'A experiência continua com um passeio de barco até as ilhas dos Uros. Um lugar que impressiona não só pela paisagem, mas pela forma como a vida acontece ali, em ilhas construídas com juncos, renovadas constantemente.',
+  'Depois, a visita segue até a Ilha de Taquile, onde o almoço é servido e o tempo parece passar em outro ritmo.',
+  'Há ainda uma parada na Praia de Collata, antes do retorno ao trem.',
+  'No fim da tarde, um chá é servido a bordo, marcando essa pausa entre experiências.',
+  'À noite, o trem segue em direção a Sacacoha.']
+
+},
+{
+  day: 'Dia 3',
+  title: 'Arequipa',
+  location: 'Lagunillas → Sumbay → Arequipa',
+  image: nascerSolImg,
+  paragraphs: [
+  'O amanhecer traz uma das cenas mais bonitas da viagem: o nascer do sol sobre o Lago Lagunillas.',
+  'Depois do café da manhã, a jornada continua até as cavernas de Sumbay, onde pinturas rupestres com mais de 8 mil anos revelam histórias silenciosas do passado.',
+  'O almoço acontece a bordo, enquanto o trem segue para Arequipa.',
+  'A chegada marca o fim da viagem, com a opção de um tour panorâmico pela cidade ou transfer direto ao aeroporto.']
+
+}];
+
 
 const included = [
-  'Acomodação a bordo do trem Belmond',
-  'Todas as refeições e bebidas durante a jornada',
-  'Experiências e entretenimento a bordo',
-  'Excursões guiadas ao longo do percurso',
-];
+'Acomodação a bordo do trem Belmond',
+'Todas as refeições e bebidas durante a jornada',
+'Experiências e entretenimento a bordo',
+'Excursões guiadas ao longo do percurso'];
+
 
 export function JourneyTimeline() {
   return (
@@ -87,8 +87,8 @@ export function JourneyTimeline() {
                         initial={{ scale: 0 }}
                         whileInView={{ scale: 1 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.3, type: 'spring' }}
-                      />
+                        transition={{ delay: 0.3, type: 'spring' }} />
+                      
                     </div>
 
                     <div className="w-full md:w-1/2">
@@ -97,8 +97,8 @@ export function JourneyTimeline() {
                           src={item.image}
                           alt={item.title}
                           loading="lazy"
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        />
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                         <div className="absolute bottom-4 left-5">
                           <span className="text-xs tracking-[0.3em] uppercase text-gold font-light">{item.day}</span>
@@ -112,16 +112,16 @@ export function JourneyTimeline() {
                         {item.title}
                       </h3>
                       <div className="space-y-3">
-                        {item.paragraphs.map((p, idx) => (
-                          <p key={idx} className="text-muted-foreground font-extralight leading-relaxed text-sm">
+                        {item.paragraphs.map((p, idx) =>
+                        <p key={idx} className="text-muted-foreground font-extralight leading-relaxed text-sm">
                             {p}
                           </p>
-                        ))}
+                        )}
                       </div>
                     </div>
                   </div>
-                </ScrollReveal>
-              );
+                </ScrollReveal>);
+
             })}
           </div>
         </div>
@@ -138,23 +138,23 @@ export function JourneyTimeline() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {included.map((item) => (
-                  <div key={item} className="flex items-start gap-3 p-4 border border-border rounded-sm">
+                {included.map((item) =>
+                <div key={item} className="flex items-start gap-3 p-4 border border-border rounded-sm">
                     <Check className="size-5 text-gold shrink-0 mt-0.5" />
                     <span className="text-foreground font-extralight tracking-wide text-sm">{item}</span>
                   </div>
-                ))}
+                )}
               </div>
 
               {/* ===== INVESTIMENTO ===== */}
               <div className="mt-16 text-center border border-gold/20 p-10 md:p-14">
                 <div className="flex items-center justify-center gap-2 mb-4">
                   <Users className="size-5 text-gold" />
-                  <span className="text-sm tracking-[0.3em] uppercase text-gold font-light">Para duas pessoas</span>
+                  <span className="text-sm tracking-[0.3em] uppercase text-gold font-light">VALOR PARA DUAS PESSOAS</span>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-4xl md:text-5xl font-extralight tracking-wide text-foreground">
-                    Consulte valores
+                  <p className="text-4xl md:text-5xl font-extralight tracking-wide text-foreground">R$49.900
+
                   </p>
                   <p className="text-muted-foreground font-extralight text-sm max-w-md mx-auto">
                     Os valores variam conforme a data de embarque e tipo de cabine escolhida. Entre em contato para uma proposta personalizada.
@@ -165,6 +165,6 @@ export function JourneyTimeline() {
           </ScrollReveal>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
