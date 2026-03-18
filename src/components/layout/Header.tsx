@@ -25,7 +25,9 @@ export function Header() {
 
   const handleNavClick = (path: string) => {
     setMobileMenuOpen(false);
-    if (path.startsWith('/#')) {
+    if (path === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (path.startsWith('/#')) {
       const id = path.replace('/#', '');
       document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     }
