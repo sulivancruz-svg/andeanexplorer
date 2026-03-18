@@ -7,7 +7,7 @@ const highlights = [
   icon: MapPin,
   title: 'Curadoria que vai além do trem',
   description:
-  'O Andean Explorer já é único por si só. O nosso papel é fazer com que tudo ao redor dele esteja à altura da viagem, com escolhas bem pensadas de hospedagem, conexões, ritmo do roteiro e experiências complementares no Peru.'
+  'O Andean Explorer já é único por si só.\nO nosso papel é fazer com que tudo ao redor dele esteja à altura da viagem, com escolhas bem pensadas de hospedagem, conexões, ritmo do roteiro e experiências complementares no Peru.'
 },
 {
   icon: CalendarCheck,
