@@ -5,6 +5,7 @@ import { ArrowRight, MessageCircle } from 'lucide-react';
 import { JourneyTimeline } from '@/components/sections/JourneyTimeline';
 import { AboardExperience } from '@/components/sections/AboardExperience';
 import { WebSeries } from '@/components/sections/WebSeries';
+import { FAQ } from '@/components/sections/FAQ';
 
 const WHATSAPP_LINK = 'https://wa.link/h8qelr';
 
