@@ -57,8 +57,8 @@ export function JourneyTimeline() {
             <h2 className="text-3xl md:text-5xl font-extralight tracking-wide text-foreground">
               Três dias pelos Andes
             </h2>
-            <p className="text-muted-foreground font-extralight max-w-2xl mx-auto text-lg">
-              De Cusco ao Lago Titicaca, cada dia revela a sua história, sua cultura e suas paisagens de tirar o fôlego.
+            <p className="text-muted-foreground font-extralight max-w-2xl mx-auto text-lg">De Cusco a Arequipa, cada dia revela a sua história, sua cultura e suas paisagens de tirar o fôlego.
+
             </p>
           </div>
         </ScrollReveal>
