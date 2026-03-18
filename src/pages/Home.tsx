@@ -57,8 +57,8 @@ export default function Home() {
                 className="text-lg md:text-xl font-extralight tracking-wide text-cream/80 max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.6 }}>Uma jornada cultural e gastronômica pelos Andes peruanos.
-De Cusco a Arequipa, uma experiência que transforma.
+                transition={{ duration: 1, delay: 0.6 }}>Uma jornada de Custo a Arequpelo Peru a bordo de um trem de alto padrão, conectando Cusco a Arequipa com conforto e 
+experiências cuidadosamente planejadas.
 
                 <br className="hidden md:block" />
                 De Cusco ao Lago Titicaca, uma experiência que transforma.
