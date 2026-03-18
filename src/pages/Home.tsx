@@ -6,6 +6,7 @@ import { JourneyTimeline } from '@/components/sections/JourneyTimeline';
 import { AboardExperience } from '@/components/sections/AboardExperience';
 import { WebSeries } from '@/components/sections/WebSeries';
 import { FAQ } from '@/components/sections/FAQ';
+import { WhyVaiProMundo } from '@/components/sections/WhyVaiProMundo';
 
 const WHATSAPP_LINK = 'https://wa.link/h8qelr';
 
@@ -127,6 +128,9 @@ export default function Home() {
             </ScrollReveal>
           </div>
         </section>
+
+        {/* ===== POR QUE VAI PRO MUNDO ===== */}
+        <WhyVaiProMundo />
 
         {/* ===== FAQ ===== */}
         <FAQ />
