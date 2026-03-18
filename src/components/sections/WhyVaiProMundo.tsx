@@ -25,7 +25,7 @@ const highlights = [
 
 export function WhyVaiProMundo() {
   return (
-    <section className="py-28 md:py-40 px-6 lg:px-8 border-t border-border">
+    <section id="sobrenos" className="py-28 md:py-40 px-6 lg:px-8 border-t border-border">
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-20 space-y-4">
