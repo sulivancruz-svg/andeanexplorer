@@ -45,29 +45,28 @@ export function WhyVaiProMundo() {
           </h2>
         </ScrollReveal>
 
-        {/* Intro paragraphs with icons */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {introPoints.map((point, i) => (
-            <ScrollReveal key={i} delay={0.1 * i}>
-              <div className="flex gap-5">
-                <point.icon className="size-7 text-gold shrink-0 mt-1" strokeWidth={1.2} />
-                <p className="text-muted-foreground font-extralight text-lg leading-relaxed">
-                  {point.text}
-                </p>
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
+        {/* Photo + intro side by side */}
+        <ScrollReveal delay={0.1}>
+          <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center mb-20">
+            <div className="rounded-lg overflow-hidden">
+              <img
+                src={sedeImg}
+                alt="Sede da Vai Pro Mundo"
+                className="w-full h-full object-contain rounded-lg"
+                loading="lazy"
+              />
+            </div>
 
-        {/* Sede photo */}
-        <ScrollReveal delay={0.15}>
-          <div className="mb-16 rounded-lg overflow-hidden">
-            <img
-              src={sedeImg}
-              alt="Sede da Vai Pro Mundo"
-              className="w-full h-[400px] object-cover"
-              loading="lazy"
-            />
+            <div className="space-y-8">
+              {introPoints.map((point, i) => (
+                <div key={i} className="flex gap-5">
+                  <point.icon className="size-7 text-gold shrink-0 mt-1" strokeWidth={1.2} />
+                  <p className="text-muted-foreground font-extralight text-lg leading-relaxed">
+                    {point.text}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </ScrollReveal>
 
