@@ -12,13 +12,10 @@ const days = [
   location: 'Cusco → La Raya → Lago Titicaca',
   image: raqchiImg,
   paragraphs: [
-  'A jornada começa em Cusco, antiga capital do Império Inca. O embarque já dá o tom do que vem pela frente: calma, cuidado e uma transição suave entre destino e experiência.',
-  'Você se acomoda na sua cabine e, aos poucos, o trem segue em direção ao sudeste, rumo a Puno.',
-  'O primeiro almoço acontece a bordo, em vagões-restaurante elegantes, com pratos que valorizam ingredientes andinos em uma leitura contemporânea.',
-  'Durante o percurso, uma parada especial na estação de Tinta leva você até Raqch\'i, um sítio arqueológico que revela uma parte única da história Inca.',
-  'No caminho, a travessia pela cordilheira de La Raya entrega uma das paisagens mais marcantes da jornada.',
-  'À noite, o jantar é servido a bordo e o clima naturalmente convida a desacelerar. O trem segue até as margens do Lago Titicaca, onde permanece durante a noite.']
-
+  'O embarque é em Cusco, antiga capital do Império Inca. Você se acomoda na cabine enquanto o trem inicia o trajeto em direção a Puno.',
+  'O almoço já acontece a bordo, com pratos que valorizam ingredientes locais, bem executados e servidos com cuidado.',
+  'Ao longo do dia, há uma parada em Raqch\'i, um importante sítio arqueológico Inca. Na sequência, o percurso passa pela cordilheira de La Raya, um dos pontos mais altos da rota.',
+  'À noite, jantar a bordo e tempo livre para aproveitar o trem. O pernoite acontece próximo ao Lago Titicaca.']
 },
 {
   day: 'Dia 2',
@@ -26,13 +23,9 @@ const days = [
   location: 'Lago Titicaca → Uros → Taquile → Sacacoha',
   image: taquileImg,
   paragraphs: [
-  'O dia começa com um café da manhã tranquilo, com vista para uma das regiões mais emblemáticas do Peru.',
-  'A experiência continua com um passeio de barco até as ilhas dos Uros. Um lugar que impressiona não só pela paisagem, mas pela forma como a vida acontece ali, em ilhas construídas com juncos, renovadas constantemente.',
-  'Depois, a visita segue até a Ilha de Taquile, onde o almoço é servido e o tempo parece passar em outro ritmo.',
-  'Há ainda uma parada na Praia de Collata, antes do retorno ao trem.',
-  'No fim da tarde, um chá é servido a bordo, marcando essa pausa entre experiências.',
-  'À noite, o trem segue em direção a Sacacoha.']
-
+  'O dia começa com café da manhã a bordo, seguido de um passeio até as ilhas dos Uros. Um lugar simples e impressionante, construído com juncos e mantido até hoje pelos próprios moradores.',
+  'Depois, visita à Ilha de Taquile, com almoço incluído, e passagem pela Praia de Collata.',
+  'No retorno ao trem, um chá da tarde marca essa pausa antes de seguir viagem. À noite, o trajeto continua em direção a Sacacoha.']
 },
 {
   day: 'Dia 3',
@@ -44,7 +37,6 @@ const days = [
   'Depois do café da manhã, a jornada continua até as cavernas de Sumbay, onde pinturas rupestres com mais de 8 mil anos revelam histórias silenciosas do passado.',
   'O almoço acontece a bordo, enquanto o trem segue para Arequipa.',
   'A chegada marca o fim da viagem, com a opção de um tour panorâmico pela cidade ou transfer direto ao aeroporto.']
-
 }];
 
 
