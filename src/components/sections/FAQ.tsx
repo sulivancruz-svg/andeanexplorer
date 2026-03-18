@@ -20,7 +20,7 @@ const faqs = [
   {
     question: 'Quais são os principais pontos turísticos visitados?',
     answer:
-      'Dia 1: Sítio arqueológico de Raqch'i e Cordilheira de La Raya. Dia 2: Ilhas flutuantes dos Uros, Ilha de Taquile e Praia de Collata (Lago Titicaca). Dia 3: Lago Lagunillas e Cavernas de Sumbay (pinturas rupestres de 8.000 anos).',
+      "Dia 1: Sítio arqueológico de Raqch'i e Cordilheira de La Raya. Dia 2: Ilhas flutuantes dos Uros, Ilha de Taquile e Praia de Collata (Lago Titicaca). Dia 3: Lago Lagunillas e Cavernas de Sumbay (pinturas rupestres de 8.000 anos).",
   },
   {
     question: 'Como é a estrutura do trem?',
