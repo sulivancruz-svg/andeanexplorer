@@ -86,7 +86,7 @@ export function WhyVaiProMundo() {
                 <h3 className="text-xl font-light tracking-wide text-foreground">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground font-extralight leading-relaxed whitespace-pre-line">
+                <p className="text-muted-foreground font-extralight leading-relaxed whitespace-pre-line text-base">
                   {item.description}
                 </p>
               </div>
