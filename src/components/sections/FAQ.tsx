@@ -30,7 +30,7 @@ const faqs = [
   {
     question: 'Onde o trem pernoita?',
     answer:
-      'Na primeira noite, o trem pernoita às margens do Lago Titicaca. Na segunda noite, segue viagem até Arequipa.',
+      'Na primeira noite, o trem pernoita às margens do Lago Titicaca. Na segunda noite, pernoita em Sacacoha, seguindo viagem até Arequipa na manhã seguinte.',
   },
   {
     question: 'O que acontece na chegada em Arequipa?',
