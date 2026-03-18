@@ -5,6 +5,7 @@ import { ArrowRight, MessageCircle } from 'lucide-react';
 import { JourneyTimeline } from '@/components/sections/JourneyTimeline';
 import { AboardExperience } from '@/components/sections/AboardExperience';
 import { WebSeries } from '@/components/sections/WebSeries';
+import { FAQ } from '@/components/sections/FAQ';
 
 const WHATSAPP_LINK = 'https://wa.link/h8qelr';
 
@@ -102,6 +103,9 @@ export default function Home() {
         <WebSeries />
 
 
+
+        {/* ===== FAQ ===== */}
+        <FAQ />
 
         {/* ===== CTA WHATSAPP ===== */}
         <section id="contato" className="py-28 md:py-40 px-6 lg:px-8 border-t border-border">
