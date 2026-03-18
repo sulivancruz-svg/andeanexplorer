@@ -25,7 +25,7 @@ const faqs = [
   {
     question: 'Como é a estrutura do trem?',
     answer:
-      'O trem possui cabines deluxe de luxo, elegantes vagões-restaurante com gastronomia andina contemporânea e um vagão-bar para socialização.',
+      'O trem possui cabines  elegantes  com banheiro privativo, vagões-restaurante com gastronomia andina contemporânea e um vagão-bar para socialização com observatório.',
   },
   {
     question: 'Onde o trem pernoita?',
