@@ -127,6 +127,9 @@ export default function Home() {
             </ScrollReveal>
           </div>
         </section>
+
+        {/* ===== FAQ ===== */}
+        <FAQ />
       </div>
     </>);
 
