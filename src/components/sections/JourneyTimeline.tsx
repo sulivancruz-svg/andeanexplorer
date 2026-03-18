@@ -49,7 +49,7 @@ const included = [
 
 export function JourneyTimeline() {
   return (
-    <section className="py-28 md:py-40 px-6 lg:px-8">
+    <section id="jornada" className="py-28 md:py-40 px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-20 space-y-4">

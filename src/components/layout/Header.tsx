@@ -10,8 +10,9 @@ import { cn } from '@/lib/utils';
 
 const navLinks = [
 { name: 'Início', path: '/' },
-{ name: 'A Experiência', path: '/#experiencia' },
-{ name: 'Galeria', path: '/#galeria' },
+{ name: 'A Jornada', path: '/#jornada' },
+{ name: 'A Bordo', path: '/#abordo' },
+{ name: 'Série', path: '/#serie' },
 { name: 'Contato', path: '/#contato' }];
 
 
