@@ -44,7 +44,7 @@ function YouTubeEmbed({ videoId, title }: { videoId: string; title: string }) {
 
 export function WebSeries() {
   return (
-    <section className="py-28 md:py-40 px-6 lg:px-8 border-t border-border">
+    <section id="serie" className="py-28 md:py-40 px-6 lg:px-8 border-t border-border">
       <div className="max-w-5xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-16 space-y-4">
