@@ -40,7 +40,7 @@ const faqs = [
   {
     question: 'Como faço para reservar?',
     answer:
-      'Entre em contato com a equipe de reservas pelo telefone (41) 3232-1965.',
+      'Entre em contato com nossos agentes pelo telefone (41) 3232-1965.',
   },
   {
     question: 'Posso personalizar minha viagem?',
