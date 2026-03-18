@@ -129,6 +129,9 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ===== POR QUE VAI PRO MUNDO ===== */}
+        <WhyVaiProMundo />
+
         {/* ===== FAQ ===== */}
         <FAQ />
       </div>
