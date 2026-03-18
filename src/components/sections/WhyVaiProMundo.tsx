@@ -7,7 +7,7 @@ const highlights = [
   icon: MapPin,
   title: 'Curadoria que vai além do trem',
   description:
-  'O Andean Explorer já é único por si só. O nosso papel é fazer com que tudo ao redor dele esteja à altura da viagem, com escolhas bem pensadas de hospedagem, conexões, ritmo do roteiro e experiências complementares no Peru.'
+  'O Andean Explorer já é único por si só.\nO nosso papel é fazer com que tudo ao redor dele esteja à altura da viagem, com escolhas bem pensadas de hospedagem, conexões, ritmo do roteiro e experiências complementares no Peru.'
 },
 {
   icon: CalendarCheck,
@@ -86,7 +86,7 @@ export function WhyVaiProMundo() {
                 <h3 className="text-xl font-light tracking-wide text-foreground">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground font-extralight leading-relaxed">
+                <p className="text-muted-foreground font-extralight leading-relaxed whitespace-pre-line">
                   {item.description}
                 </p>
               </div>
