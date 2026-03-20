@@ -30,7 +30,7 @@ export default function Home() {
               autoPlay muted loop playsInline preload="metadata"
               className="w-full h-full object-cover">
               
-              <source src="/videos/video_hero.mp4" type="video/mp4" />
+              <source src="/andeanexplorer/videos/hero-bg.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-background" />
           </div>
