@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { Check, Users } from 'lucide-react';
-import raqchiImg from '@/assets/raqchi.jpg';
-import taquileImg from '@/assets/taquile.jpg';
+import raqchiImg from '@/assets/raqchi.webp';
+import taquileImg from '@/assets/taquile.webp';
 import nascerSolImg from '@/assets/nascer-sol-saracocha.jpeg';
 
 const days = [

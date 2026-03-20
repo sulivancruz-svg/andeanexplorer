@@ -1,8 +1,8 @@
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
-import gastronomiaImg from '@/assets/gastronomia.jpeg';
-import vagaoLoungeImg from '@/assets/vagao-lounge.jpg';
+import gastronomiaImg from '@/assets/gastronomia.webp';
+import vagaoLoungeImg from '@/assets/vagao-lounge.webp';
 import observatorioImg from '@/assets/observatorio.jpeg';
-import cabineImg from '@/assets/cabine.jpg';
+import cabineImg from '@/assets/cabine.webp';
 
 const features = [
   {
