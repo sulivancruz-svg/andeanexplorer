@@ -1,6 +1,6 @@
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { MapPin, CalendarCheck, Heart, Compass, Star } from 'lucide-react';
-import sedeImg from '@/assets/foto-sede.png';
+import sedeImg from '@/assets/foto-sede.webp';
 
 const highlights = [
 {
